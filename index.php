@@ -11,7 +11,7 @@
 
       <!-- Check required boxes -->
       <?php if($msg != ''): ?>
-        <div class="card-panel center <?php echo $msg_class; ?>">
+        <div class="card-panel center white-text <?php echo $msg_class; ?>">
           <?php echo $msg; ?>
         </div>
       <?php endif; ?>
