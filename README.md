@@ -4,4 +4,3 @@ Simple contact form with empty fields (using HTML) and proper e-mail format chec
 
 # Examples:
 ![Success](./img/success.png)
-![Incorrect Email](./img/wrong-email.png)
