@@ -2,5 +2,4 @@
 
 Simple contact form with empty fields (using HTML) and proper e-mail format check. Front-end was developed using [Materialize.css framework](https://materializecss.com/). 
 
-# Example:
 ![Success](./img/success.png)
