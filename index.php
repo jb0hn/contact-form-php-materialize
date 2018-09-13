@@ -21,17 +21,17 @@
           <div class="row center">
             <div class="input-field col s12">
               <i class="material-icons prefix">face</i>
-              <input id="name" type="text" name="name" value="<?php echo isset($_POST['name']) ? $data['name'] : ''; // prevent removing value from the form after failed sending ?>" required oninvalid="this.setCustomValidity('Input your name')" oninput="setCustomValidity('')">
+              <input id="name" class="validate" type="text" name="name" value="<?php echo isset($_POST['name']) ? $data['name'] : ''; // prevent removing value from the form after failed sending ?>" required oninvalid="this.setCustomValidity('Input your name')" oninput="setCustomValidity('')">
               <label for="name">Name</label>
             </div>
             <div class="input-field col s12">
               <i class="material-icons prefix">email</i>
-              <input id="email" type="text" name="email" value="<?php echo isset($_POST['email']) ? $data['email'] : ''; // prevent removing value from the form after failed sending ?>" required oninvalid="this.setCustomValidity('Input your e-mail')" oninput="setCustomValidity('')">
-              <label for="email">Email</label>
+              <input id="email" class="validate" type="email" name="email" value="<?php echo isset($_POST['email']) ? $data['email'] : ''; // prevent removing value from the form after failed sending ?>" required>
+              <label for="email" data-error="wrong" data-success="right">Email</label>
             </div>
             <div class="input-field col s12">
               <i class="material-icons prefix">message</i>
-              <textarea id="message" name="message" class="materialize-textarea" required oninvalid="this.setCustomValidity('Input your message')" oninput="setCustomValidity('')"><?php echo isset($_POST['message']) ? $data['message'] : ''; // prevent removing value from the form after failed sending ?></textarea>
+              <textarea id="message" name="message" class="materialize-textarea validate" required oninvalid="this.setCustomValidity('Input your message')" oninput="setCustomValidity('')"><?php echo isset($_POST['message']) ? $data['message'] : ''; // prevent removing value from the form after failed sending ?></textarea>
               <label for="message">Message</label>
             </div>
             <button class="btn waves-effect waves-light pulse" type="submit" name="submit">Submit
